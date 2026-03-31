@@ -28,7 +28,7 @@ The proposed method includes five main modules: <br/>
 - $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
 - $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
 - $\overline{S}_i$ = $[\overline{S}_i^x,\overline{S}_i^y,\overline{S}_i^z]^T$ : auxiliary sliding mode surface
-- $$\Phi(\psi_i^e) = [ \Phi_x(\psi_i,x^e), \Phi_y(\psi_i,y^e), \Phi_z(\psi_i,z^e)]^T$$ : 
+- $$\Phi(\psi_i^e) = [ \Phi_x(\psi^e_{i,x}), \Phi_y(\psi^e_{i,y}), \Phi_z(\psi^e_{i,z})]^T$$ : 
 
 
 
