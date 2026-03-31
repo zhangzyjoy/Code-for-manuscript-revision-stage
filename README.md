@@ -6,6 +6,9 @@ The README file includes four chapters:
 3. simulation scheme and implementation procedure, introducing how to run the simulation models using MATLAB/SIMULINK;
 4. experimental validation scheme and implementation procedure, introducing how to run the software-in-loop simulation in Python before conducting the experiment, and how to deploy the controller on multiple crazyflie UAVs. <br/>
 
+**Note: A video is developed to illustrate the performance metrics of the proposed / compared method in the real-world experiment by deploying 'Code For Experiment' to drive the crazyflie UAVs.** <br/>
+**The video can be accessed at https://youtu.be/3SR10K3WDYw?si=wBZPJSE5iLvDWyJl or https://www.bilibili.com/video/BV1T8XrBbEVf/**
+
 ## Symbol Definition List<br/>
 - $g$ : gravitational acceleration
 - $\overline e _3$ : unit vector $[0,0,1]^{T}$
@@ -91,6 +94,8 @@ $$
 \end{align}
 \quad\quad(7)$$<br/>
 
+Virtual linear velocity tracking error
+
 $$
 \begin{align}
 \overline \sigma _i ^v = v _i - \sigma _i ^v
@@ -128,7 +133,6 @@ The proposed method includes five main modules: <br/>
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-Note: A video is developed to <br/>
 
 **If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com**
 
