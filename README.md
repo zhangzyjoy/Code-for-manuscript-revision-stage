@@ -15,16 +15,25 @@ The proposed method includes five main modules: <br/>
 - $g$ : gravitational acceleration
 - $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
-- 
+- $\Lambda_{i}$ : inertia matrix 
 - $p_{0}$ : position vector of leader UAV
 - $v_{0}$ : linear velocity vector of leader UAV
 - $u_{0}$ : linear acceleration vector of leader UAV
 - $p_{i}$ : position vector of follower UAV node $i$
 - $v_{i}$ : linear velocity vector of follower UAV node $i$
+- $e_{i}^{p}$ : position tracking error of follower UAV node $i$
+- $e_{i}^{v}$ : velocity tracking error of follower UAV node $i$
 - $u_{i}$ : translational control input vector of follower UAV node $i$
+- $\hat{p}_{i}^{d}$ : desired position observation for follower UAV node $i$
+- $\hat{v}_{i}^{d}$ : desired velocity observation for follower UAV node $i$
+- $e_{i,p}^{d}$ : observation error of desired position for follower UAV node $i$
+- $e_{i,v}^{d}$ : observation error of desired velocity for follower UAV node $i$
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
-- $$R\left( Q_{i} \right)$$ : rotation matrix
-- $$\varpi_{i}$$ : angular velocity
+- $R\left( Q_{i} \right)$ : rotation matrix
+- $\varpi_{i}$ : angular velocity
+- $Q_{i}^{c}$ : quaternion command
+- $R\left( Q_{i}^{c} \right)$ : rotation matrix command
+- $\varpi_{i}^{c}$ : angular velocity command
 - 
 
 ### Control Scheme<br/>
