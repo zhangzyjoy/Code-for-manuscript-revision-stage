@@ -16,16 +16,11 @@ The proposed method includes five main modules: <br/>
 - $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
 - $\Lambda_{i}$ : inertia matrix 
-- $p_{0}$ : position vector of leader UAV
-- $v_{0}$ : linear velocity vector of leader UAV
-- $u_{0}$ : linear acceleration vector of leader UAV
-- $p_{i}$ : position vector of follower UAV node $i$
-- $v_{i}$ : linear velocity vector of follower UAV node $i$
-- $e_{i}^{p}$ : position tracking error of follower UAV node $i$
-- $e_{i}^{v}$ : velocity tracking error of follower UAV node $i$
-- $u_{i}$ : translational control input vector of follower UAV node $i$
-- $\hat{p}_{i}^{d}$ : desired position observation for follower UAV node $i$
-- $\hat{v}_{i}^{d}$ : desired velocity observation for follower UAV node $i$
+- $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
+- $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
+- $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
+- $e_{i}^{p}$, $e_{i}^{v}$ : position, velocity tracking error of follower UAV node $i$
+- $\hat{p}_{i}^{d}$,\$\hat{v}_{i}^{d}$ : desired position, velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$ : observation error of desired position for follower UAV node $i$
 - $e_{i,v}^{d}$ : observation error of desired velocity for follower UAV node $i$
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
