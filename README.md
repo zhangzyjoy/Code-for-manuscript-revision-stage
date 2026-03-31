@@ -130,12 +130,18 @@ $$
 \begin{aligned}
 \hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
 \end{aligned}
-\quad\quad(10)$$<br/>
-
+\quad\quad(11)$$<br/>
 
 
 ### nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
+For any $i \in {x,y,z}$, 
+
+$$
+\begin{aligned}
+\overline S_{i,y}
+\end{aligned}
+\quad\quad(11)$$<br/>
 
 
 ### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
