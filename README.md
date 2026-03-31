@@ -18,7 +18,8 @@ The proposed method includes five main modules: <br/>
 - $g$ : gravitational acceleration
 - $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
-- $Q_{i} = \left[ \rho, q^{T} \right]^{T}$ : quaternion
+- $Q_{i} = \left[ \rho_{i}, q_{i}^{T} \right]^{T} = \left[ \rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}  \right]^{T} $ : quaternion
+- 
 
 ### Control Scheme<br/>
 #### practical fixed-time distributed state observer (PFxTDSO)<br/>
