@@ -105,12 +105,14 @@ $$
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
 
 $$
-\begin{aligned}
+\left \{ 
+\begin{array}{a}
 & \tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
 & \dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
 & \dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
 & \dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
-\end{aligned}
+\end{array}
+\right.
 \quad\quad(9)$$<br/>
 
 and then $\dot {\overline \sigma} _i ^v$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
@@ -139,9 +141,12 @@ For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
 $$
 \begin{aligned}
-\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} pi} / 2 )} }
+\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} }
 \end{aligned}
 \quad\quad(12)$$<br/>
+
+intermediate auxiliary rotational error
+
 
 
 ### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
