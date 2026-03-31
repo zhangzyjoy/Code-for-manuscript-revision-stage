@@ -139,9 +139,9 @@ For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
 $$
 \begin{aligned}
-\overline S_{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi | frac {\psi ^e _{i,k}} \pi| ^{p+1}} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} pi} / 2 )}
+\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S {\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} pi} / 2 )} }
 \end{aligned}
-\quad\quad(11)$$<br/>
+\quad\quad(12)$$<br/>
 
 
 ### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
