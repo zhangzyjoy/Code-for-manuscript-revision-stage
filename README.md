@@ -22,6 +22,8 @@ The proposed method includes five main modules: <br/>
 - $e_{i}^{p}$, $e_{i}^{v}$ : position, velocity tracking error of follower UAV node $i$
 - $\hat p_i ^d, \hat v_i ^d$ : desired position, velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, velocity for follower UAV node $i$
+- $d_i^v$ : translational disturbance
+- 
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
 - $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
 - $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
@@ -30,6 +32,9 @@ The proposed method includes five main modules: <br/>
 - $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
 - $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : intermediate auxiliary rotational error
 - $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of intermediate auxiliary rotational error
+- $F_i^S$ : rotation compensation term
+- $\tau_i$ : applied torque rotational control input
+- 
 
 
 ### Control Scheme<br/>
