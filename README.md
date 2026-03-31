@@ -113,7 +113,7 @@ $$
 \end{aligned}
 \quad\quad(9)$$<br/>
 
-
+and then $\dot {\overline \sigma} _i ^v$ in Eq.(8) approximately equals to the output value $\hat \sigma _1$
 
 
 
