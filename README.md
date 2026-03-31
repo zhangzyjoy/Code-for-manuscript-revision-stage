@@ -6,7 +6,6 @@ We already upload two folders 'Code For Simulation' and 'Code For Experiment' in
 Simulation scripts and models are uploaded in 'Code For Simulation' folder and can be tested using MATLAB R2020a software with SIMULINK toolbox installed.
 
 MATLAB version: 9.8.0.1323502 (R2020a) or higher
-
 Simulink version: 10.1 (MATLAB R2020a) or higher
 
 The proposed method includes five main modules: 
