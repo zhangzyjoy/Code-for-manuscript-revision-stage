@@ -25,7 +25,7 @@ The proposed method includes five main modules: <br/>
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
 - $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
 - $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
-- $\varpi_{i}$, $\varpi_{i}^{c}, $\varpi_{i}^{e}$$ : angular velocity, command, error
+- $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
 
 
 ### Control Scheme<br/>
