@@ -89,7 +89,7 @@ $$
 Update virtual linear velocity tracking vector<br/>
 
 $$
-\begin{align}
+\begin{aligned}
 \dot \sigma _i ^v = -g \overline e _3 + T_i R(Q_i) \overline e _3/ m _i + c _i ^{v,3} \overline \sigma _i ^v
 \end{align}
 \quad\quad(7)$$<br/>
@@ -97,7 +97,7 @@ $$
 Virtual linear velocity tracking error
 
 $$
-\begin{align}
+\begin{aligned}
 \overline \sigma _i ^v = v _i - \sigma _i ^v
 \end{align}
 \quad\quad(8)$$<br/>
@@ -106,10 +106,11 @@ High-order nonlinear differentiator
 
 $$
 \left {
-\begin{align}
+\begin{aligned}
 & \tilde \sigma _0 = \overline \sigma _i ^v - \hat \sigma _0 \\
 & \dot {\hat \sigma} _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g^{1+\varsigma} ( \tilde \sigma _0 ) \\
 \end{align}
+\right .
 \quad\quad(9)$$<br/>
 
 
