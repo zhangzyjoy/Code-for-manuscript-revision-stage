@@ -13,21 +13,15 @@ The proposed method includes five main modules: <br/>
 
 ### Symbol definition list
 
-$$
-p_{i} \quad \text{—— position vector of follower UAV node } i
-$$
+$$ p_{i} \quad \text{—— position vector of follower UAV node } i $$
 
-$$
-v_{i} \quad \text{—— velocity vector of follower UAV node } i
-$$
+$$ v_{i} \quad \text{—— velocity vector of follower UAV node } i $$
 
-$$
-g \quad \text{—— gravitational acceleration}
-$$
+$$ g \quad \text{—— gravitational acceleration} $$
 
-$$
-\bar{e}_{3} \quad \text{—— unit vector } [0,0,1]^{T}
-$$
+$$ \bar{e}_{3} \quad \text{—— unit vector } [0,0,1]^{T} $$
+
+
 
 ### Control Scheme<br/>
 #### practical fixed-time distributed state observer (PFxTDSO)<br/>
