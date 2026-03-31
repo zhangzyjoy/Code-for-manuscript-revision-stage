@@ -26,7 +26,9 @@ The proposed method includes five main modules: <br/>
 - $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
 - $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
 - $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
-- $\overline{S}_i$ = $[\overline{S}_i^x,\overline{S}_i^y,\overline{S}_i^z]^{T}$
+- $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
+- $\overline{S}_i$ = $[\overline{S}_i^x,\overline{S}_i^y,\overline{S}_i^z]^{T}$ : auxiliary sliding mode surface
+- 
 
 
 
