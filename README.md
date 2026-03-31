@@ -29,7 +29,7 @@ The proposed method includes five main modules: <br/>
 - $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
 - $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
 - $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : intermediate auxiliary rotational error
-- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi_{i,x} ^e), \overline \Phi _y(\psi_{i,y} ^e), \overline \Phi _z(\psi_{i,z} ^e)]^T$ : first derivative of intermediate auxiliary rotational error
+- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of intermediate auxiliary rotational error
 
 
 ### Control Scheme<br/>
