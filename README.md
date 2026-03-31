@@ -8,7 +8,7 @@ The README file includes four chapters:
 
 ## Symbol Definition List<br/>
 - $g$ : gravitational acceleration
-- $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
+- $\overline e _3$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
 - $\Lambda_{i}$ : inertia matrix 
 - $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
@@ -87,7 +87,7 @@ Update virtual linear velocity tracking vector<br/>
 
 $$
 \begin{align}
-\dot \sigma _i ^v = -g \bar e _3 + T_i R(Q_i) \bar e _3/ m _i + c _i ^{v,3} \bar \sigma _i ^v
+\dot \sigma _i ^v = -g \overline e _3 + T_i R(Q_i) \overline e _3/ m _i + c _i ^{v,3} \overline \sigma _i ^v
 \end{align}
 \quad\quad(7)$$<br/>
 
