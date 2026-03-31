@@ -106,8 +106,9 @@ High-order nonlinear differentiator
 
 $$
 \begin{aligned}
-\left{& \tilde \sigma _0 = \overline \sigma _i ^v - \hat \sigma _0 \\
-& \dot {\hat \sigma} _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g^{1+\varsigma} ( \tilde \sigma _0 ) \\
+& \tilde \sigma _0 = \overline \sigma _i ^v - \hat \sigma _0 \\
+& \dot {\hat \sigma} _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma _0 ) \\
+& \dot {\hat \sigma} _1 = \hat \sigma _2 - c _2 ^i * \hbar * \mathrm {si} \mathrm g ^ {\frac 2 3}
 \end{aligned}
 \quad\quad(9)$$<br/>
 
