@@ -11,7 +11,7 @@ The proposed method includes five main modules: <br/>
 4. fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 5. practical fixed-time decentralized formation controller (PFxTDFC)<br/>
 
-### Symbol definition list
+### Symbol definition list<br/>
 
 $$ p_{i} \text{—— position vector of follower UAV node } i $$ <br/>
 $$ v_{i} \text{—— velocity vector of follower UAV node } i $$ <br/>
