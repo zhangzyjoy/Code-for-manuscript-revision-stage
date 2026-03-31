@@ -67,6 +67,12 @@ $$
 \end{align}
 \quad\quad(4)$$<br/>
 
+$$
+\begin{align}
+\dot v _i ^d = - \ell _1 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) - \ell _2 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) )
+\end{align}
+\quad\quad(5)$$<br/>
+
 
 
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
