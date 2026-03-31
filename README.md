@@ -15,8 +15,8 @@ The proposed method includes five main modules: <br/>
 
 - $p_{i}$ : position vector of follower UAV node $i$
 - $v_{i}$ : velocity vector of follower UAV node $i$
-- $g$ : gravitational acceleration
-- $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
+- $g$ : gravitational acceleration, $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$, $m_{i}$ : mass
+- 
 
 
 
