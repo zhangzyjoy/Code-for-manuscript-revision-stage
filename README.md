@@ -22,14 +22,13 @@ The proposed method includes five main modules: <br/>
 - $e_{i}^{p}$, $e_{i}^{v}$ : position, velocity tracking error of follower UAV node $i$
 - $\hat{p}_i^d$, $\hat{v}_i^d$ : desired position, velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, velocity for follower UAV node $i$
-- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
+- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
 - $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
 - $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
 - $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
-- 
 - $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
-- $\overline{S}_i$ = $[\overline{S}_i^x,\overline{S}_i^y,\overline{S}_i^z]^{T}$ : auxiliary sliding mode surface
-- 
+- $\overline{S}_i$ = $[\overline{S}_i^x,\overline{S}_i^y,\overline{S}_i^z]^T$ : auxiliary sliding mode surface
+- $$\Phi(\psi_i^e) = [ \Phi_x(\psi_i,x^e), \Phi_y(\psi_i,y^e), \Phi_z(\psi_i,z^e)]^T$$ : 
 
 
 
