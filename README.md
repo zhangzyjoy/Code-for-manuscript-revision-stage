@@ -124,6 +124,13 @@ $$
 \end{aligned}
 \quad\quad(10)$$<br/>
 
+translational disturbance observer<br/>
+
+$$
+\begin{aligned}
+\hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
+\end{aligned}
+\quad\quad(10)$$<br/>
 
 
 
