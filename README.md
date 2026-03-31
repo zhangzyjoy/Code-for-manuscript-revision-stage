@@ -20,7 +20,7 @@ The proposed method includes five main modules: <br/>
 - $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
 - $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
 - $e_{i}^{p}$, $e_{i}^{v}$ : position, velocity tracking error of follower UAV node $i$
-- ${\hat{p}}_{i}^{d}$, ${\hat{v}}_{i}^{d}$ : desired position, velocity observation for follower UAV node $i$
+- $\hat{p}_i^d$, $\hat{v}_i^d$ : desired position, velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, velocity for follower UAV node $i$
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
 - $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
