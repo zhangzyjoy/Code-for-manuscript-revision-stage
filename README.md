@@ -43,12 +43,9 @@ The proposed method includes five main modules: <br/>
 ### Control Scheme<br/>
 #### practical fixed-time distributed state observer (PFxTDSO)<br/>
 
-$$
-\begin{align}
-e _{i,v} ^d &= \hat v _i ^d - v_0 - \dot \delta _i                    \tag(1)\\
-e _{i,p} ^d &= \hat p _i ^d - p_0 - \delta _i                         \tag(2)
-\end{align}
-$$
+$$e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i                    \quad\quad(1)$$
+$$e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i                         \quad\quad(2)$$
+
 
 
 
