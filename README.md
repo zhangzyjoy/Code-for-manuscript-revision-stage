@@ -102,8 +102,16 @@ $$
 \end{align}
 \quad\quad(8)$$<br/>
 
+High-order nonlinear differentiator
 
+$$
+\begin{align}
+& \tilde \sigma _0 = \overline \sigma _i ^v - \hat \sigma _0
+& \dot {\hat \sigma} _2 = - c _1 ^i \sgn( \tilde \sigma _0 ) - c _1 ^i ( 1 - \hbar ) sig ^{1+\varsigma} ( \tilde \sigma _0 )
+& \dot {\hat \sigma} _1 = - c _2 ^i sig ^{\frac 1 3} ( \tilde \sigma _0 ) - c _1 ^i ( 1 - \hbar ) sig ^{1+\varsigma} ( \tilde \sigma _0 )
 
+\end{align}
+\quad\quad(8)$$<br/>
 
 
 ### nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
