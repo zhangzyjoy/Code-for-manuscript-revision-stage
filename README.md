@@ -45,10 +45,11 @@ The proposed method includes five main modules: <br/>
 
 $$
 \begin{align}
-e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i                    \tag(1)\\
-e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i                         \tag(2)
+e _{i,v} ^d &= \hat v _i ^d - v_0 - \dot \delta _i                    \tag(1)\\
+e _{i,p} ^d &= \hat p _i ^d - p_0 - \delta _i                         \tag(2)
 \end{align}
-$$<br/>
+$$
+
 
 
 #### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
