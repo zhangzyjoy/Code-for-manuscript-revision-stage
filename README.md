@@ -43,6 +43,8 @@ The proposed method includes five main modules: <br/>
 ### Control Scheme<br/>
 #### practical fixed-time distributed state observer (PFxTDSO)<br/>
 
+$e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i$                    (1)
+
 
 
 #### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
