@@ -18,7 +18,7 @@ The proposed method includes five main modules: <br/>
 - $g$ : gravitational acceleration
 - $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
-- $Q_{i} = \left[ \rho_{i}, q_{i}^{T}]^{T} = [ \rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}  \right]^{T} $ : quaternion
+- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
 - 
 
 ### Control Scheme<br/>
