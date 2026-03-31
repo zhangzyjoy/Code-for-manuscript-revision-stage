@@ -17,7 +17,11 @@ The proposed method includes five main modules:
 5) practical fixed-time decentralized formation controller (PFxTDFC)
 
 Symbol definition: 
-$$p_{i}$$
+
+$$p_{i}$$ —— position vector of follower UAV node $$i$$ , 
+$$v_{i}$$ —— velocity vector of follower UAV node $$i$$ , 
+
+
 
 
 
