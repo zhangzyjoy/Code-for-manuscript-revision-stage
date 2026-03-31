@@ -144,9 +144,17 @@ $$
 \end{aligned}
 \quad\quad(12)$$<br/>
 
-intermediate auxiliary rotational error
+For any $i \in {x,y,z}$, define intermediate auxiliary rotational error
 
-
+$$
+\begin{aligned}
+\Phi _x ( \psi ^e _{i,k}) = 
+\begin{cases}
+& a    & if \psi ^e _{i,k}
+& b   & if \psi ^e _{i,k}
+\end{cases}
+\end{aligned}
+\quad\quad(12)$$<br/>
 
 ### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 
