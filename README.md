@@ -56,9 +56,11 @@ Lumped formation observation error for follower UAV node $i$<br/>
 $$
 \begin{align}
 \tilde e _{i,v} ^d &= b _{i0} e ^d _{i,v} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,v} - e ^d _{j,v} ) \\
-&= b _{i0} ( \hat v _i ^d - v_0 ) + \sum ^N _{j=1} w _{ij} ( \hat v _i ^d - \hat v _j ^d )
+&= b _{i0} ( \hat v _i ^d - v_0 - \dot \delta _i ) + \sum ^N _{j=1} w _{ij} ( ( \hat v _i ^d - \dot \delta _i ) - ( \hat v _j ^d - \dot \delta _j ) )
 \end{align}
 \quad\quad(3)$$<br/>
+
+
 
 
 
