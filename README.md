@@ -60,7 +60,12 @@ $$
 \end{align}
 \quad\quad(3)$$<br/>
 
-
+$$
+\begin{align}
+\tilde e _{i,p} ^d &= b _{i0} e ^d _{i,p} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,p} - e ^d _{j,p} ) \\
+&= b _{i0} ( \hat p _i ^d - p_0 - \delta _i ) + \sum ^N _{j=1} w _{ij} ( ( \hat p _i ^d - \delta _i ) - ( \hat p _j ^d - \delta _j ) )
+\end{align}
+\quad\quad(4)$$<br/>
 
 
 
