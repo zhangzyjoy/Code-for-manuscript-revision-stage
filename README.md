@@ -67,6 +67,8 @@ $$
 \end{align}
 \quad\quad(4)$$<br/>
 
+Update desired state observation for follower UAV node $i$<br/>
+
 $$
 \begin{align}
 \dot {\hat v} _i ^d = - \ell _1 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _1, \mu _o ^p ) - \ell _2 ^v \vartheta ( \tilde e ^d _{i,v}, \gamma _2, \mu _o ^p ) )
@@ -79,11 +81,16 @@ $$
 \end{align}
 \quad\quad(6)$$<br/>
 
-
-
-
-
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
+
+Update virtual linear velocity tracking vector<br/>
+
+$$
+\begin{align}
+\dot \sigma _i ^v = -g \bar e _3 + T_i R(Q_i) \bar e _3/ m _i + c _i ^{v,3} \bar \sigma _i ^v
+\end{align}
+\quad\quad(7)$$<br/>
+
 
 
 
