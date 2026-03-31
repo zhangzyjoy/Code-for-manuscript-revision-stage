@@ -104,18 +104,6 @@ $$
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
 
-
-
-$$
-\begin{cases}
-a_1x+b_1y+c_1z=d_1 \\ 
-a_2x+b_2y+c_2z=d_2 \\ 
-a_3x+b_3y+c_3z=d_3
-\end{cases}
-\quad\quad(9)$$<br/>
-
-
-
 $$
 \begin{cases}
 \tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
