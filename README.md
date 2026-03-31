@@ -42,12 +42,7 @@ $$e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i                    \quad\qua
 $$e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i                         \quad\quad(2)$$<br/>
 
 Lumped formation observation error for follower UAV node $i$<br/>
-$$
-\begin{align}
-\tilde{e}_{i,v}^{d} &= b_{i0} e_{i,v}^{d} + \sum_{j=1}^{N} w_{ij} \left( e_{i,v}^{d} - e_{j,v}^{d} \right) \\
-&= b_{i0} \left( \hat{v}_{i}^{d} - v_{0} \right) + \sum_{j=1}^{N} w_{ij} \left( \hat{v}_{i}^{d} - \hat{v}_{j}^{d} \right)
-\end{align}
-$$
+$$\tilde e _{i,v} ^d = b _{i0} e _{i,v} ^d + \sum _{j=1} ^N w_{ij} ( e _{i,v} ^d - e _{j,v} ^d ) = b_{i0} ( \hat v _i ^d - v_0 ) + \sum _{j=1} ^N w_{ij} ( \hat v _i ^d - \hat v _j ^d )$$
 
 
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
