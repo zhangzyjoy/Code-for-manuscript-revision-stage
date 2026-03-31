@@ -37,11 +37,11 @@ The README file includes four chapters:
 ## Controller Design <br/>
 ### practical fixed-time distributed state observer (PFxTDSO)<br/>
 
-Observation error for follower UAV node $i$
-$$e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i                    \quad\quad(1)$$
-$$e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i                         \quad\quad(2)$$
+Observation error for follower UAV node $i$<br/>
+$$e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i                    \quad\quad(1)$$<br/>
+$$e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i                         \quad\quad(2)$$<br/>
 
-
+Lumped formation observation error for follower UAV node $i$<br/>
 
 
 
