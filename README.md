@@ -102,7 +102,7 @@ $$
 \end{aligned}
 \quad\quad(8)$$<br/>
 
-High-order nonlinear differentiator
+In order to achieve $\hat \sigma _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
 
 $$
 \begin{aligned}
@@ -112,6 +112,7 @@ $$
 & \dot {\hat \sigma} _0 = \hat \sigma _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma _0 )
 \end{aligned}
 \quad\quad(9)$$<br/>
+
 
 
 
