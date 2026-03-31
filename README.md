@@ -29,10 +29,10 @@ The proposed method includes five main modules: <br/>
 - $e_{i,p}^{d}$ : observation error of desired position for follower UAV node $i$
 - $e_{i,v}^{d}$ : observation error of desired velocity for follower UAV node $i$
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
-- $R(Q_{i})$ : rotation matrix
+- $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
 - $\varpi_{i}$ : angular velocity
 - $Q_{i}^{c}$ : quaternion command
-- $R(Q_{i}^{c})$ : rotation matrix command
+-  : rotation matrix command
 - $\varpi_{i}^{c}$ : angular velocity command
 - 
 
