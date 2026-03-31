@@ -91,6 +91,13 @@ $$
 \end{align}
 \quad\quad(7)$$<br/>
 
+$$
+\begin{align}
+\overline \sigma _i ^v = v _i - \sigma _i ^v
+\end{align}
+\quad\quad(8)$$<br/>
+
+
 
 
 
