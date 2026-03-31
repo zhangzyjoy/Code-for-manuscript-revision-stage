@@ -66,6 +66,7 @@ Simulation scripts and models are uploaded in 'Code For Simulation' folder and c
 MATLAB version: 9.8.0.1323502 (R2020a) or higher<br/>
 Simulink version: 10.1 (MATLAB R2020a) or higher<br/>
 The proposed method includes five main modules: <br/>
+
 1. practical fixed-time distributed state observer (PFxTDSO)<br/>
 2. fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
 3. nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
