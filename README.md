@@ -105,12 +105,14 @@ $$
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
 
 $$
+\begin{aligned}
 \begin{cases}
-\tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
-\dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
-\dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
-\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
+$ \tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
+$ \dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
+$ \dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
+$ \dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
+\end{aligned}
 \quad\quad(9)$$<br/>
 
 
@@ -148,13 +150,25 @@ For any $i \in {x,y,z}$, define intermediate auxiliary rotational error
 
 $$
 \begin{aligned}
-\Phi _x ( \psi ^e _{i,k}) = 
+\Phi _k ( \psi ^e _{i,k}) = 
 \begin{cases}
 &\frac {3 ^{p+1} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p+1}} {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )}   & \text{  if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| > \overline \varepsilon ^{S} _{i,k} \\
 &\psi ^e _{i,k} ( \beta ^1 _\Phi |\frac {\psi ^e _{i,k}} \pi|^2 + \beta ^2 _\Phi |\frac {\psi ^e _{i,k}} \pi| ^{2p} )   & \text{  if } \overline S _{i,k} \ne 0,\text{ }|\psi ^e _{i,k}| \le \overline \varepsilon ^{S} _{i,k}
 \end{cases}
 \end{aligned}
 \quad\quad(13)$$<br/>
+
+Sliding mode surface
+
+$$
+\begin{aligned}
+\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S \Phi _k ( \psi ^e _{i,k})
+\end{aligned}
+\quad\quad(14)$$<br/>
+
+The derivative of intermediate auxiliary rotational error
+
+
 
 
 
