@@ -81,6 +81,8 @@ $$
 
 
 
+
+
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
 
 
@@ -112,6 +114,7 @@ The proposed method includes five main modules: <br/>
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-
+Note: A video is developed to 
+** If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com **
 
 
