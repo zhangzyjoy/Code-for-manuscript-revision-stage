@@ -23,11 +23,10 @@ The proposed method includes five main modules: <br/>
 - $\hat{p_{i}^{d}}$, $\hat{v}_{i}^{d}$ : desired position, velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, velocity for follower UAV node $i$
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
+- $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
 - $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
-- $\varpi_{i}$ : angular velocity
-- $Q_{i}^{c}$ : quaternion command
-- $\varpi_{i}^{c}$ : angular velocity command
-- 
+- $\varpi_{i}$, $\varpi_{i}^{c}, $\varpi_{i}^{e}$$ : angular velocity, command, error
+
 
 ### Control Scheme<br/>
 #### practical fixed-time distributed state observer (PFxTDSO)<br/>
