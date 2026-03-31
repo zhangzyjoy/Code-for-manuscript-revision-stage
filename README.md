@@ -38,6 +38,7 @@ The README file includes four chapters:
 ### practical fixed-time distributed state observer (PFxTDSO)<br/>
 
 Observation error for follower UAV node $i$<br/>
+
 $$
 \begin{align}
 e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i
@@ -51,18 +52,14 @@ e _{i,p} ^d = \hat p _i ^d - p_0 - \delta _i
 \quad\quad(2)$$<br/>
 
 Lumped formation observation error for follower UAV node $i$<br/>
+
 $$
 \begin{align}
-\tilde e _{i,v} ^d &= b _{i0} e ^d _{i,v} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,v} - e ^d _{j,v} ) \\\\
+\tilde e _{i,v} ^d &= b _{i0} e ^d _{i,v} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,v} - e ^d _{j,v} ) \\
 &= b _{i0} ( \hat v _i ^d - v_0 ) + \sum ^N _{j=1} w _{ij} ( \hat v _i ^d - \hat v _j ^d )
 \end{align}
 \quad\quad(3)$$<br/>
 
-$$
-\begin{align}
-\tilde e _{i,v} ^d &= b _{i0} e ^d _{i,v} + \sum ^N _{j=1} w _{ij} ( e ^d _{i,v} - e ^d _{j,v} ) \\ &= b _{i0} ( \hat v _i ^d - v_0 ) + \sum ^N _{j=1} w _{ij} ( \hat v _i ^d - \hat v _j ^d )
-\end{align}
-\quad\quad(3)$$<br/>
 
 
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
