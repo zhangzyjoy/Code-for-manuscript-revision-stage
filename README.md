@@ -15,7 +15,7 @@ Symbol definition: <br/>
 $$p_{i}$$ —— position vector of follower UAV node $$i$$ <br/>
 $$v_{i}$$ —— velocity vector of follower UAV node $$i$$ <br/>
 $$g$$ —— gravitational acceleration <br/>
-
+$$\bar{e}_{3}$$ —— unit vector $${[0,0,1]}^{T}$$ <br/>
 
 
 
