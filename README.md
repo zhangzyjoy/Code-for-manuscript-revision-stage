@@ -108,9 +108,12 @@ $$
 \begin{aligned}
 & \tilde \sigma _0 = \overline \sigma _i ^v - \hat \sigma _0 \\
 & \dot {\hat \sigma} _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma _0 ) \\
-& \dot {\hat \sigma} _1 = \hat \sigma _2 - c _2 ^i * \hbar * \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma _0 ) - c _2 ^i * ( 1 - \hbar ) * \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma}
+& \dot {\hat \sigma} _1 = \hat \sigma _2 - c _2 ^i * \hbar * \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma _0 ) - c _2 ^i * ( 1 - \hbar ) * \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma _0 ) \\
+& \dot {\hat \sigma} _0 = \hat \sigma _1 - c _3 ^i * \hbar * \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma _0 ) - c _3 ^i * ( 1 - \hbar ) * \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma _0 )
 \end{aligned}
 \quad\quad(9)$$<br/>
+
+
 
 
 ### nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
