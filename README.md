@@ -150,7 +150,7 @@ $$
 \begin{aligned}
 \Phi _x ( \psi ^e _{i,k}) = 
 \begin{cases}
-& a    & if \psi ^e _{i,k}
+& a    & if \psi ^e _{i,k} \\
 & b   & if \psi ^e _{i,k}
 \end{cases}
 \end{aligned}
