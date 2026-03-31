@@ -13,13 +13,10 @@ The proposed method includes five main modules: <br/>
 
 ### Symbol definition list
 
-$$ p_{i} \quad \text{—— position vector of follower UAV node } i $$
-
-$$ v_{i} \quad \text{—— velocity vector of follower UAV node } i $$
-
-$$ g \quad \text{—— gravitational acceleration} $$
-
-$$ \bar{e}_{3} \quad \text{—— unit vector } [0,0,1]^{T} $$
+$$ p_{i} \text{—— position vector of follower UAV node } i $$ <br/>
+$$ v_{i} \text{—— velocity vector of follower UAV node } i $$ <br/>
+$$ g \text{—— gravitational acceleration} $$ <br/>
+$$ \bar{e}_{3} \text{—— unit vector } [0,0,1]^{T} $$ <br/>
 
 
 
