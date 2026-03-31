@@ -19,11 +19,11 @@ The proposed method includes five main modules: <br/>
 - $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
 - $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
 - $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
-- $e_{i}^{p}$, $e_{i}^{v}$ : position, velocity tracking error of follower UAV node $i$
-- $\hat p_i ^d, \hat v_i ^d$ : desired position, velocity observation for follower UAV node $i$
-- $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, velocity for follower UAV node $i$
+- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
+- $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
+- $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
 - $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
-- $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual velocity tracking vector, tracking error, tracking error observation
+- $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
 - $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
 - $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
@@ -34,7 +34,8 @@ The proposed method includes five main modules: <br/>
 - $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of intermediate auxiliary rotational error
 - $F_i^S$ : rotation compensation term
 - $\tau_i$ : applied torque rotational control input
-- 
+- $d _i ^\varpi$, $\hat d _i ^\varpi$ : rotational disturbance, disturbance observation
+- $\sigma _i ^\varpi$, $\overline \sigma _i ^\varpi$, $\hat {\overline \sigma} _i ^\varpi$ : virtual angular velocity tracking vector, tracking error, tracking error observation
 
 
 ### Control Scheme<br/>
