@@ -12,13 +12,19 @@ The proposed method includes five main modules: <br/>
 5. practical fixed-time decentralized formation controller (PFxTDFC)<br/>
 
 ### Symbol definition list
-
-- $p_{i}$ : position vector of follower UAV node $i$
-- $v_{i}$ : velocity vector of follower UAV node $i$
 - $g$ : gravitational acceleration
 - $\bar{e}_{3}$ : unit vector $[0,0,1]^{T}$
 - $m_{i}$ : mass
+- 
+- $p_{0}$ : position vector of leader UAV
+- $v_{0}$ : linear velocity vector of leader UAV
+- $u_{0}$ : linear acceleration vector of leader UAV
+- $p_{i}$ : position vector of follower UAV node $i$
+- $v_{i}$ : linear velocity vector of follower UAV node $i$
+- $u_{i}$ : translational control input vector of follower UAV node $i$
 - $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^{T}$ : quaternion
+- $$R\left( Q_{i} \right)$$ : rotation matrix
+- $$\varpi_{i}$$ : angular velocity
 - 
 
 ### Control Scheme<br/>
