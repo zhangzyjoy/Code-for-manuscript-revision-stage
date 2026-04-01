@@ -339,12 +339,13 @@ The proposed control method of translational subsystem, **PFxTDSO**, **FxTDO in 
 ## Simulation Scheme and Implementation Procedure<br/>
 Simulation scripts and models are uploaded in 'Code For Simulation' folder and can be tested using MATLAB R2020a software with SIMULINK toolbox installed.<br/><br/>
 
-MATLAB version: 9.8.0.1323502 (R2020a) or higher<br/>
-Simulink version: 10.1 (MATLAB R2020a) or higher<br/><br/>
+**MATLAB version: 9.8.0.1323502 (R2020a) or higher**<br/>
+**Simulink version: 10.1 (MATLAB R2020a) or higher**<br/><br/>
 
-
-
-
+1. Enter the directory "\Code For Simulation".
+2. Run "\Code For Simulation\init_sim_paper_scenario.m" to initialize the parameters and states.
+3. Run "\Code For Simulation\run_sim_paper_scenario.slx" to run the simulation model.
+4. Run "\Code For Simulation\plot_sim_paper_scenario.m" to plot the simulation results.
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
