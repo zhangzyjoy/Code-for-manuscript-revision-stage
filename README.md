@@ -184,6 +184,15 @@ $$
 \quad\quad(15)$$<br/>
 
 
+The rotation compensation term
+
+$$
+\begin{aligned}
+\overline F _i ^S = - ( \varpi _i ) _\times \Lambda _i \varpi _i
+\end{aligned}
+\quad\quad(16)$$<br/>
+
+
 
 ### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 
