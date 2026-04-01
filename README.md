@@ -354,7 +354,7 @@ Refer to the following link for instructions on installing the required packages
 https://crazyswarm.readthedocs.io/en/latest/installation.html <br/><br/>
 In the experiment, we use Crazyflie 2.1+ UAVs equipped with Lighthouse Positioning Deck, crazyradio 2.0 and Lighthouse base stations. <br/>
 Instructions for Crazyflie 2.1+ UAVs : https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-2-x/ <br/>
-Instructions for Crazyradio 2.0 : https://www.bitcraze.io/products/crazyradio-2-0/ <br/>
+Instructions for Crazyradio 2.0 : https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/ <br/>
 Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse/ <br/>
 
 
