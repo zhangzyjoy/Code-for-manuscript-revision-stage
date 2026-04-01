@@ -86,7 +86,54 @@ $$
 
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
 
+Update virtual angular velocity tracking vector<br/>
 
+$$
+\begin{aligned}
+\dot \sigma _i ^\varpi = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + h _i ^{\varpi,3} \overline \sigma _i ^\varpi )
+\end{aligned}
+\quad\quad(7)$$<br/>
+
+Virtual angular velocity tracking error
+
+$$
+\begin{aligned}
+\overline \sigma _i ^\varpi = \varpi _i - \sigma _i ^\varpi
+\end{aligned}
+\quad\quad(8)$$<br/>
+
+In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^\varpi$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^\varpi$, a high-order nonlinear differentiator is given as
+
+$$
+\begin{aligned}
+\begin{cases}
+&\tilde \sigma ^i _0 = \overline \sigma _i ^\varpi - \hat \sigma ^i _0 \\
+&\dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
+&\dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
+&\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
+\end{cases}
+\end{aligned}
+\quad\quad(9)$$<br/>
+
+
+and then $\dot {\overline \sigma} _i ^\varpi$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
+
+
+an adaptive updating law<br/>
+
+$$
+\begin{aligned}
+\dot {\hat {\overline \sigma}} _i ^\varpi = \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,1} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _1 ^\varpi, \mu _d ^\varpi ) + h _i ^{\varpi,2} \vartheta ( \tilde {\overline \sigma} _i ^\varpi, \alpha _2 ^\varpi, \mu _d ^\varpi )
+\end{aligned}
+\quad\quad(10)$$<br/>
+
+rotational disturbance observer<br/>
+
+$$
+\begin{aligned}
+\hat d _i ^\varpi = \Lambda _i \dot {\overline \sigma} _i ^\varpi + h _i ^{\varpi,3} \hat {\overline \sigma} _i ^\varpi
+\end{aligned}
+\quad\quad(11)$$<br/>
 
 
 ### nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
@@ -180,7 +227,7 @@ $$
 \begin{aligned}
 \dot \sigma _i ^v = -g \overline e _3 + T_i R(Q_i) \overline e _3/ m _i + c _i ^{v,3} \overline \sigma _i ^v
 \end{aligned}
-\quad\quad(7)$$<br/>
+\quad\quad(20)$$<br/>
 
 Virtual linear velocity tracking error
 
@@ -188,7 +235,7 @@ $$
 \begin{aligned}
 \overline \sigma _i ^v = v _i - \sigma _i ^v
 \end{aligned}
-\quad\quad(8)$$<br/>
+\quad\quad(21)$$<br/>
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
 
@@ -201,7 +248,7 @@ $$
 &\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
-\quad\quad(9)$$<br/>
+\quad\quad(22)$$<br/>
 
 
 and then $\dot {\overline \sigma} _i ^v$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
@@ -213,7 +260,7 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,1} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _1 ^v, \mu _d ^v ) + c _i ^{v,2} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _2 ^v, \mu _d ^v )
 \end{aligned}
-\quad\quad(10)$$<br/>
+\quad\quad(23)$$<br/>
 
 translational disturbance observer<br/>
 
@@ -221,7 +268,7 @@ $$
 \begin{aligned}
 \hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
 \end{aligned}
-\quad\quad(11)$$<br/>
+\quad\quad(24)$$<br/>
 
 
 ### practical fixed-time decentralized formation controller (PFxTDFC)<br/>
