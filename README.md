@@ -330,9 +330,15 @@ $$
 \end{aligned}
 \quad\quad(30)$$<br/>
 
+<br/>
+**Note** : <br/> 
+Git clone and download the code from this repository. <br/>
+All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rotational** subsystem, **NLSMAC**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **numerical simulation** by running the **MATLAB scripts / Simulink models** in folder 'Code For Simulation'. <br/>
+The proposed control method of translational subsystem, **PFxTDSO**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **software-in-loop simulation** and **real-world experiment** by running the **Python scripts** in folder 'Code For Experiment'. <br/> <br/>
 
 ## Simulation Scheme and Implementation Procedure<br/>
 Simulation scripts and models are uploaded in 'Code For Simulation' folder and can be tested using MATLAB R2020a software with SIMULINK toolbox installed.<br/><br/>
+
 MATLAB version: 9.8.0.1323502 (R2020a) or higher<br/>
 Simulink version: 10.1 (MATLAB R2020a) or higher<br/><br/>
 
