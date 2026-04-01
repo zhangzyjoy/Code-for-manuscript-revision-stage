@@ -349,11 +349,53 @@ Simulation scripts and models are uploaded in 'Code For Simulation' folder and c
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-The software-in-loop simulation has already been tested in Ubuntu 18.04
+The software-in-loop simulation has already been tested in an software environment of Ubuntu 18.04, ROS Melodic, Python 3.8, or a virtual machine with the same configuration. <br/><br/>
+Refer to the following link for instructions on installing the required packages : <br/>
+https://crazyswarm.readthedocs.io/en/latest/installation.html <br/><br/>
+In the experiment, we use Crazyflie 2.1+ UAVs equipped with Lighthouse Positioning Deck, crazyradio 2.0 and Lighthouse base stations. <br/>
+Instructions for Crazyflie 2.1+ UAVs : https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-2-x/ <br/>
+Instructions for Crazyradio 2.0 : https://www.bitcraze.io/products/crazyradio-2-0/ <br/>
+Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse/ <br/>
 
+
+The proposed translational control scheme, including PFxTDSO, FxTDO, and PFxTDFC, is deployed on crazyflie UAV swarm platform.<br/>
+1. Download the child directory '/chimu_ws' into the main directory, namely '\home\username\'<br/>
+2. Enter the workspace and compile the package crazyswarm<br/>
+```
+cd /home/username/chimu_ws/src/crazyswarm/ros_ws/
+catkin_make
+```
+3. Enter the launch directory to modify the settings<br/>
+```
+cd /home/username/chimu_ws/src/crazyswarm/ros_ws/src/crazyswarm/launch/
+touch allCrazyflies.yaml
+```
+Fill in the desired number, channel, and initial position.<br/>
+4. Run the software-in-loop simulation<br/>
+```
+cd /home/username/chimu_ws/src/crazyswarm/ros_ws/src/crazyswarm/scripts/
+python3 chooser.py
+```
+Check the box of UAVs that are used, the corresponding information of UAVs in allCrazyflies.yaml will be chosen into the file crazyflies.yaml that will be loaded when running the scripts.<br/> 
+Close the window of chooser and then run the software-in-loop simulation of the proposed method<br/>
+```
+python3 zzzz_run_sim_in_paper.py --sim
+```
+Run the software-in-loop simulation of the compared method<br/>
+```
+python3 zzzz_run_sim_for_compare.py --sim
+```
+5. Deploy on the Crazyswarm UAVs and run<br/>
 ```
 roslaunch crazyswarm vel_log_lighthouse.launch
+rosrun crazyswarm zzzz_run_experiment_in_paper.py
 ```
+for validation of the proposed method or run<br/>
+```
+roslaunch crazyswarm vel_log_lighthouse.launch
+rosrun crazyswarm zzzz_run_experiment_for_compare.py
+```
+for validation of the compared method<br/><br/>
 
 **If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com**
 
