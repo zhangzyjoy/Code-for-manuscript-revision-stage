@@ -166,7 +166,7 @@ $$
 &\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _\times \\
 &\varpi _i ^e = \varpi _i - ( R ( Q _i ^e ) ) ^T \varpi _i ^c \\
 &\dot R ( Q _i ^e ) = R ( Q _i ^e ) ( \varpi _i ^e ) _\times \\
-&\dot \psi ^e _{i,k} = \varpi _i ^e
+&\dot \psi ^e _i = \varpi _i ^e
 \end{cases}
 \end{aligned}
 \quad\quad(19)$$<br/>
