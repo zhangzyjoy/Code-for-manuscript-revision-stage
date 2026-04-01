@@ -273,8 +273,56 @@ $$
 
 ### practical fixed-time decentralized formation controller (PFxTDFC)<br/>
 
+Position and linear velocity tracking error
 
+$$
+\begin{aligned}
+e _i ^v = v _i - \hat v _i ^d
+\end{aligned}
+\quad\quad(25)$$<br/>
 
+$$
+\begin{aligned}
+e _i ^p = p _i - \hat p _i ^d
+\end{aligned}
+\quad\quad(26)$$<br/>
+
+virtual velocity error tracking vector
+
+$$
+\begin{aligned}
+\chi _i = &- \kappa _1 ^\chi \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) \\
+&- \kappa _2 ^\chi \vartheta ( e _i ^p, \beta _2, \mu _c ^p )
+\end{aligned}
+\quad\quad(27)$$<br/>
+
+virtual velocity error tracking error
+
+$$
+\begin{aligned}
+\phi _i = e _i ^v - \chi _i
+\end{aligned}
+\quad\quad(28)$$<br/>
+
+design the translational control input
+
+$$
+\begin{aligned}
+u _i = &g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) \\
+&- \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p )
+\end{aligned}
+\quad\quad(29)$$<br/>
+
+update the translational dynamics
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot v _i = -g \overline e _3 + T _i R( Q _i ) \overline e _3 / m _i + d _i ^v \\
+&\dot p _i = v _i
+\end{cases}
+\end{aligned}
+\quad\quad(30)$$<br/>
 
 
 ## Simulation Scheme and Implementation Procedure<br/>
