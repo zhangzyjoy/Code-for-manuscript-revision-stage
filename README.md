@@ -38,6 +38,14 @@ The README file includes four chapters:
 - $\sigma _i ^\varpi$, $\overline \sigma _i ^\varpi$, $\hat {\overline \sigma} _i ^\varpi$ : virtual angular velocity tracking vector, tracking error, tracking error observation
 
 ## Controller Design <br/>
+
+The proposed method includes five main modules: <br/>
+1. practical fixed-time distributed state observer (PFxTDSO)<br/>
+2. fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
+3. nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+4. fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
+5. practical fixed-time decentralized formation controller (PFxTDFC)<br/>
+
 ### practical fixed-time distributed state observer (PFxTDSO)<br/>
 
 Observation error for follower UAV node $i$<br/>
@@ -327,12 +335,9 @@ $$
 Simulation scripts and models are uploaded in 'Code For Simulation' folder and can be tested using MATLAB R2020a software with SIMULINK toolbox installed.<br/><br/>
 MATLAB version: 9.8.0.1323502 (R2020a) or higher<br/>
 Simulink version: 10.1 (MATLAB R2020a) or higher<br/><br/>
-The proposed method includes five main modules: <br/>
-1. practical fixed-time distributed state observer (PFxTDSO)<br/>
-2. fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
-3. nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
-4. fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
-5. practical fixed-time decentralized formation controller (PFxTDFC)<br/>
+
+
+
 
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
