@@ -349,7 +349,7 @@ Simulation scripts and models are uploaded in 'Code For Simulation' folder and c
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-Prepare a Ubuntu 
+The software-in-loop simulation has already been tested in Ubuntu 18.04
 
 ```
 roslaunch crazyswarm vel_log_lighthouse.launch
