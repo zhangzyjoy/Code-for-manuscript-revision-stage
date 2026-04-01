@@ -173,9 +173,9 @@ $$
 \overline \Phi _k ( \psi ^e _{i,k}) = 
 \begin{cases}
 &\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
-&\frac {3 ^{p+1}} 4 \gamma |\frac {\psi ^e _{i,k}} \pi| ^{p-1} (\frac {\sech ( \gamma \frac {\psi ^e _{i,k}} \pi / 2 )} {\tanh ( \gamma \frac {\psi ^e _{i,k}} \pi / 2 )} )^2 \varpi ^e _{i,k},
+&\frac {3 ^{p+1}} 4 \gamma |\frac {\psi ^e _{i,k}} \pi| ^{p-1} (\frac {\sech ( \gamma \frac {\psi ^e _{i,k}} \pi / 2 )} {\tanh ( \gamma \frac {\psi ^e _{i,k}} \pi / 2 )} )^2 \varpi ^e _{i,k}, \\
 & \text{                        if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| > \overline \varepsilon ^{S} _{i,k} \\
-&( 2 \beta ^1 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^2 + ( 2p + 1 ) \beta ^2 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^{2p} ) \varpi ^e _{i,k}
+&( 2 \beta ^1 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^2 + ( 2p + 1 ) \beta ^2 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^{2p} ) \varpi ^e _{i,k}, \\
 & \text{                        if } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| \le \overline
 \end{cases}
 \end{aligned}
