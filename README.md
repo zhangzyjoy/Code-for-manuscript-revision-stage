@@ -17,10 +17,10 @@ The README file includes four chapters:
 - $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
 - $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
 - $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
-- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
 - $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
 - $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
 - $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
+- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
 - $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
 - $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
 - $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
@@ -272,6 +272,7 @@ $$
 
 
 ### practical fixed-time decentralized formation controller (PFxTDFC)<br/>
+
 
 
 
