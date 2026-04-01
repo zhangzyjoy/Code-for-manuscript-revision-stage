@@ -107,10 +107,10 @@ In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\ha
 $$
 \begin{aligned}
 \begin{cases}
-& \tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
-& \dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
-& \dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
-& \dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
+&\tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
+&\dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
+&\dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
+&\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
 \quad\quad(9)$$<br/>
@@ -172,10 +172,14 @@ $$
 \begin{aligned}
 \overline \Phi _k ( \psi ^e _{i,k}) = 
 \begin{cases}
-&\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )}
+&\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )} \\
+&\frac {3 ^{p+1}} 4 \gamma |\frac {\psi ^e _{i,k}} \pi| ^{p-1} (\frac {\sech ( \gamma \frac {\psi ^e _{i,k}} \pi / 2 )} {\tanh ( \gamma \frac {\psi ^e _{i,k}} \pi / 2 )} )^2 \varpi ^e _{i,k},
+& \text{                        if } \overline S _{i,k} = 0, \text{  or  } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| > \overline \varepsilon ^{S} _{i,k} \\
+&( 2 \beta ^1 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^2 + ( 2p + 1 ) \beta ^2 _\Phi | \frac {\psi ^e _{i,k}} \pi | ^{2p} ) \varpi ^e _{i,k}
+& \text{                        if } \overline S _{i,k} \ne 0,\text{  }|\psi ^e _{i,k}| \le \overline
 \end{cases}
 \end{aligned}
-\quad\quad(13)$$<br/>
+\quad\quad(15)$$<br/>
 
 
 
