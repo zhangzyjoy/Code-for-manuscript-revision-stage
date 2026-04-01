@@ -291,8 +291,7 @@ virtual velocity error tracking vector
 
 $$
 \begin{aligned}
-\chi _i = &- \kappa _1 ^\chi \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) \\
-&- \kappa _2 ^\chi \vartheta ( e _i ^p, \beta _2, \mu _c ^p )
+\chi _i = - \kappa _1 ^\chi \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) - \kappa _2 ^\chi \vartheta ( e _i ^p, \beta _2, \mu _c ^p )
 \end{aligned}
 \quad\quad(27)$$<br/>
 
@@ -308,8 +307,7 @@ design the translational control input
 
 $$
 \begin{aligned}
-u _i = &g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) \\
-&- \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p )
+u _i = g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p )
 \end{aligned}
 \quad\quad(29)$$<br/>
 
