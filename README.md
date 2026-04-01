@@ -168,7 +168,14 @@ $$
 
 The derivative of intermediate auxiliary rotational error
 
-
+$$
+\begin{aligned}
+\overline \Phi _k ( \psi ^e _{i,k}) = 
+\begin{cases}
+&\frac { 3 ^{p+1} (p+1) \frac {\psi ^e _{i,k}} \pi | \frac {\psi ^e _{i,k}} \pi | ^{p-1} \varpi ^e _{i,k} } {2 \tanh ( \gamma {\frac {\psi ^e _{i,k}} \pi} / 2 )}
+\end{cases}
+\end{aligned}
+\quad\quad(13)$$<br/>
 
 
 
