@@ -183,14 +183,31 @@ $$
 \end{aligned}
 \quad\quad(15)$$<br/>
 
+The angular velocity error
+
+$$
+\begin{aligned}
+\varpi _i ^e = \varpi _i - ( R ( Q _i ^e ) ) ^T \varpi _i ^c
+\end{aligned}
+\quad\quad(16)$$<br/>
+
 
 The rotation compensation term
 
 $$
 \begin{aligned}
-\overline F _i ^S = - ( \varpi _i ) _\times \Lambda _i \varpi _i
+F _i ^S = - ( \varpi _i ) _\times \Lambda _i \varpi _i + \Lambda _i ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^c - \Lambda _i ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c + c _i ^S \Lambda _i \overline \Phi _k ( \psi ^e _{i,k})
 \end{aligned}
-\quad\quad(16)$$<br/>
+\quad\quad(17)$$<br/>
+
+The applied torque control input
+
+$$
+\begin{aligned}
+\tau _i = - c _i ^{\varpi,1} \vartheta ( S_i, \beta ^1 _\varpi, \mu _c ^\Theta ) - c _i ^{\varpi,2} \vartheta ( S_i, \beta ^2 _\varpi, \mu _c ^\Theta ) - c _i ^{\varpi,3} S_i - \hat d _i ^\varpi - \frac 1 2 ( \overline \eta _i ^S ) ^2 \| F _i ^S \| ^2 S_i
+\end{aligned}
+\quad\quad(18)$$<br/>
+
 
 
 
