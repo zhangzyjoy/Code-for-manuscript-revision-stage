@@ -330,7 +330,7 @@ $$
 \end{aligned}
 \quad\quad(30)$$<br/>
 
-<br/>
+
 **Note** : <br/> 
 Git clone and download the code from this repository. <br/>
 All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rotational** subsystem, **NLSMAC**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **numerical simulation** by running the **MATLAB scripts / Simulink models** in folder 'Code For Simulation'. <br/>
