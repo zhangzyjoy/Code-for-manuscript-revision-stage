@@ -86,54 +86,7 @@ $$
 
 ### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
 
-Update virtual linear velocity tracking vector<br/>
 
-$$
-\begin{aligned}
-\dot \sigma _i ^v = -g \overline e _3 + T_i R(Q_i) \overline e _3/ m _i + c _i ^{v,3} \overline \sigma _i ^v
-\end{aligned}
-\quad\quad(7)$$<br/>
-
-Virtual linear velocity tracking error
-
-$$
-\begin{aligned}
-\overline \sigma _i ^v = v _i - \sigma _i ^v
-\end{aligned}
-\quad\quad(8)$$<br/>
-
-In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
-
-$$
-\begin{aligned}
-\begin{cases}
-&\tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
-&\dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
-&\dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
-&\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
-\end{cases}
-\end{aligned}
-\quad\quad(9)$$<br/>
-
-
-and then $\dot {\overline \sigma} _i ^v$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
-
-
-an adaptive updating law<br/>
-
-$$
-\begin{aligned}
-\dot {\hat {\overline \sigma}} _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,1} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _1 ^v, \mu _d ^v ) + c _i ^{v,2} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _2 ^v, \mu _d ^v )
-\end{aligned}
-\quad\quad(10)$$<br/>
-
-translational disturbance observer<br/>
-
-$$
-\begin{aligned}
-\hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
-\end{aligned}
-\quad\quad(11)$$<br/>
 
 
 ### nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
@@ -183,14 +136,6 @@ $$
 \end{aligned}
 \quad\quad(15)$$<br/>
 
-The angular velocity error
-
-$$
-\begin{aligned}
-\varpi _i ^e = \varpi _i - ( R ( Q _i ^e ) ) ^T \varpi _i ^c
-\end{aligned}
-\quad\quad(16)$$<br/>
-
 
 The rotation compensation term
 
@@ -210,11 +155,73 @@ $$
 \end{aligned}
 \quad\quad(18)$$<br/>
 
+where $\hat d _i ^\varpi$ is obtained by FxTDO in rotational system<br/>
 
+Update rotational dynamics, including angular velocity, rotational matrix and their tracking errors
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot \varpi _i = ( \Lambda _i ) ^{-1} ( - ( \varpi _i ) _\times \Lambda _i \varpi _i + \tau _i + d _i ^\varpi ) \\
+&\dot R ( Q _i ) = R ( Q _i ) ( \varpi _i ) _\times \\
+&\varpi _i ^e = \varpi _i - ( R ( Q _i ^e ) ) ^T \varpi _i ^c \\
+&\dot R ( Q _i ^e ) = R ( Q _i ^e ) ( \varpi _i ^e ) _\times \\
+&\dot \psi ^e _{i,k} = \varpi _i ^e
+\end{cases}
+\end{aligned}
+\quad\quad(19)$$<br/>
 
 
 ### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 
+Update virtual linear velocity tracking vector<br/>
+
+$$
+\begin{aligned}
+\dot \sigma _i ^v = -g \overline e _3 + T_i R(Q_i) \overline e _3/ m _i + c _i ^{v,3} \overline \sigma _i ^v
+\end{aligned}
+\quad\quad(7)$$<br/>
+
+Virtual linear velocity tracking error
+
+$$
+\begin{aligned}
+\overline \sigma _i ^v = v _i - \sigma _i ^v
+\end{aligned}
+\quad\quad(8)$$<br/>
+
+In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
+
+$$
+\begin{aligned}
+\begin{cases}
+&\tilde \sigma ^i _0 = \overline \sigma _i ^v - \hat \sigma ^i _0 \\
+&\dot {\hat \sigma} ^i _2 = - c _1 ^i \mathrm {sgn} ( \tilde \sigma ^i _0 ) - c _1 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+\varsigma} ( \tilde \sigma ^i _0 ) \\
+&\dot {\hat \sigma} ^i _1 = \hat \sigma _2 ^i - c _2 ^i \hbar \mathrm {si} \mathrm g ^{\frac 1 3} ( \tilde \sigma ^i _0 ) - c _2 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 2 3} \varsigma} ( \tilde \sigma ^i _0 ) \\
+&\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
+\end{cases}
+\end{aligned}
+\quad\quad(9)$$<br/>
+
+
+and then $\dot {\overline \sigma} _i ^v$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
+
+
+an adaptive updating law<br/>
+
+$$
+\begin{aligned}
+\dot {\hat {\overline \sigma}} _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,1} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _1 ^v, \mu _d ^v ) + c _i ^{v,2} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _2 ^v, \mu _d ^v )
+\end{aligned}
+\quad\quad(10)$$<br/>
+
+translational disturbance observer<br/>
+
+$$
+\begin{aligned}
+\hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
+\end{aligned}
+\quad\quad(11)$$<br/>
 
 
 ### practical fixed-time decentralized formation controller (PFxTDFC)<br/>
