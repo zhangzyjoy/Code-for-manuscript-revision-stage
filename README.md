@@ -337,15 +337,8 @@ The proposed method includes five main modules: <br/>
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-```python
-def cal_abs_x_a(x, a):
-    x_abs = abs(x)
-    a_frac = Fraction(a)
-    a_num = a_frac.limit_denominator().numerator
-    a_den = a_frac.limit_denominator().denominator
-    x_a = np.power(x_abs, a_num)
-    y = np.power(x_a, (1 / a_den))
-    return y
+```
+roslaunch crazyswarm vel_log_lighthouse.launch
 ```
 
 **If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com**
