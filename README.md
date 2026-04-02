@@ -331,10 +331,12 @@ $$
 \quad\quad(30)$$<br/>
 
 
-**Note** : <br/> 
-Git clone and download the code from this repository. <br/>
-All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rotational** subsystem, **NLSMAC**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **numerical simulation** by running the **MATLAB scripts / Simulink models** in folder 'Code For Simulation'. <br/>
-The proposed control method of translational subsystem, **PFxTDSO**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **software-in-loop simulation** and **real-world experiment** by running the **Python scripts** in folder 'Code For Experiment'. <br/> <br/>
+## Note for existence of differences in simulation and experiment <br/> 
+
+
+
+**For further **<br/>
+
 
 ## Simulation Scheme and Implementation Procedure<br/>
 Simulation scripts and models are uploaded in 'Code For Simulation' folder and can be tested using MATLAB R2020a software with SIMULINK toolbox installed.<br/><br/>
@@ -342,10 +344,14 @@ Simulation scripts and models are uploaded in 'Code For Simulation' folder and c
 **MATLAB version: 9.8.0.1323502 (R2020a) or higher**<br/>
 **Simulink version: 10.1 (MATLAB R2020a) or higher**<br/><br/>
 
-1. Download the code package and unzip 'Code For Simulation' to arbitrary path. THen guide to the directory "/Code For Simulation".
-2. Run "/Code For Simulation/init_sim_paper_scenario.m" to initialize the parameters and states.
-3. Run "/Code For Simulation/run_sim_paper_scenario.slx" to run the simulation model. Check if the simulation time is set as 30s (default). Check the solver in configuration parameters setting and choose fixed-step ode4 solver (default).
-5. Run "/Code For Simulation/plot_sim_paper_scenario.m" to plot the simulation results.
+Git clone and download the code from this repository. <br/>
+All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rotational** subsystem, **NLSMAC**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **numerical simulation** by running the **MATLAB scripts / Simulink models** in folder 'Code For Simulation'. <br/><br/>
+
+**Testing the code** : <br/>
+1. Download the code package and unzip 'Code For Simulation' to arbitrary path. THen guide to the directory "/Code For Simulation".<br/>
+2. Run "/Code For Simulation/init_sim_paper_scenario.m" to initialize the parameters and states.<br/>
+3. Run "/Code For Simulation/run_sim_paper_scenario.slx" to run the simulation model. Check if the simulation time is set as 30s (default). Check the solver in configuration parameters setting and choose fixed-step ode4 solver (default).<br/>
+5. Run "/Code For Simulation/plot_sim_paper_scenario.m" to plot the simulation results.<br/>
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
@@ -357,8 +363,9 @@ Instructions for Crazyflie 2.1+ UAVs : https://www.bitcraze.io/documentation/tut
 Instructions for Crazyradio 2.0 : https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/ <br/>
 Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse/ <br/>
 
+The proposed control method of translational subsystem, **PFxTDSO**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **software-in-loop simulation** and **real-world experiment on Crazyflie UAVs** by running the **Python scripts** in folder 'Code For Experiment'. <br/> <br/>
 
-The proposed translational control scheme, including PFxTDSO, FxTDO, and PFxTDFC, is deployed on crazyflie UAV swarm platform.<br/>
+**Testing the code** : <br/>
 1. Download the code package and unzip 'Code For Experiment' to arbitrary path. Recursively Move all files in child directory '/chimu_ws' to the main directory '/home/username/'<br/>
 2. Guide to the workspace and compile the package crazyswarm<br/>
 ```
