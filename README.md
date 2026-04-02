@@ -2,9 +2,9 @@
 We already upload two folders 'Code For Simulation' and 'Code For Experiment' in the main branch in this repository.
 The README file includes four chapters: 
 1. symbol definition list, indicating all symbols utilized in the control design;
-2. controller design, demonstrating detailed controller scheme with equations and diagrams;
+2. detailed controller scheme with equations;
 3. simulation scheme and implementation procedure, introducing how to run the simulation models using MATLAB/SIMULINK;
-4. experimental validation scheme and implementation procedure, introducing how to run the software-in-loop simulation in Python before conducting the experiment, and how to deploy the controller on multiple crazyflie UAVs. <br/>
+4. experimental validation scheme and implementation procedure, introducing how to run the software-in-loop simulation in Python, and how to deploy the controller code on multiple crazyflie UAVs to conduct the experiment. <br/>
 
 **Note: A video is developed to illustrate the performance metrics of the proposed / compared method in the real-world experiment by deploying 'Code For Experiment' to drive the crazyflie UAVs.** <br/>
 **The video can be accessed at https://youtu.be/3SR10K3WDYw?si=wBZPJSE5iLvDWyJl or https://www.bilibili.com/video/BV1T8XrBbEVf/**
