@@ -359,7 +359,7 @@ Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tuto
 
 
 The proposed translational control scheme, including PFxTDSO, FxTDO, and PFxTDFC, is deployed on crazyflie UAV swarm platform.<br/>
-1. Save the child directory '/chimu_ws' in the main directory, namely '/home/username/'<br/>
+1. Download the code package and unzip 'Code For Experiment' to arbitrary path. Recursively Move all files in child directory '/chimu_ws' to the main directory '/home/username/'<br/>
 2. Guide to the workspace and compile the package crazyswarm<br/>
 ```
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/
