@@ -342,14 +342,14 @@ Simulation scripts and models are uploaded in 'Code For Simulation' folder and c
 **MATLAB version: 9.8.0.1323502 (R2020a) or higher**<br/>
 **Simulink version: 10.1 (MATLAB R2020a) or higher**<br/><br/>
 
-1. Enter the directory "\Code For Simulation".
-2. Run "\Code For Simulation\init_sim_paper_scenario.m" to initialize the parameters and states.
-3. Run "\Code For Simulation\run_sim_paper_scenario.slx" to run the simulation model.
-4. Run "\Code For Simulation\plot_sim_paper_scenario.m" to plot the simulation results.
+1. Download the code package and unzip 'Code For Simulation' to arbitrary path. THen guide to the directory "/Code For Simulation".
+2. Run "/Code For Simulation/init_sim_paper_scenario.m" to initialize the parameters and states.
+3. Run "/Code For Simulation/run_sim_paper_scenario.slx" to run the simulation model. Check if the simulation time is set as 30s (default). Check the solver in configuration parameters setting and choose fixed-step ode4 solver (default).
+5. Run "/Code For Simulation/plot_sim_paper_scenario.m" to plot the simulation results.
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-The software-in-loop simulation has already been tested in an software environment of Ubuntu 18.04, ROS Melodic, Python 3.8, or a virtual machine with the same configuration. <br/><br/>
+The software-in-loop simulation has already been tested in a VMWARE virtual machine with an software environment of Ubuntu 18.04, ROS Melodic, Python 3.8. The experiment is run in a workstation control center with the same software configuration. <br/><br/>
 Refer to the following link for instructions on installing the required packages : <br/>
 https://crazyswarm.readthedocs.io/en/latest/installation.html <br/><br/>
 In the experiment, we use Crazyflie 2.1+ UAVs equipped with Lighthouse Positioning Deck, crazyradio 2.0 and Lighthouse base stations. <br/>
@@ -359,8 +359,8 @@ Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tuto
 
 
 The proposed translational control scheme, including PFxTDSO, FxTDO, and PFxTDFC, is deployed on crazyflie UAV swarm platform.<br/>
-1. Download the child directory '/chimu_ws' into the main directory, namely '\home\username\'<br/>
-2. Enter the workspace and compile the package crazyswarm<br/>
+1. Save the child directory '/chimu_ws' in the main directory, namely '/home/username/'<br/>
+2. Guide to the workspace and compile the package crazyswarm<br/>
 ```
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/
 catkin_make
@@ -385,7 +385,9 @@ Run the software-in-loop simulation of the compared method<br/>
 ```
 python3 zzzz_run_sim_for_compare.py --sim
 ```
-5. Deploy on the Crazyswarm UAVs and run<br/>
+5. Deploy the control scheme on the Crazyswarm UAVs. Turn <br/>
+
+Run the ROS <br/>
 ```
 roslaunch crazyswarm vel_log_lighthouse.launch
 rosrun crazyswarm zzzz_run_experiment_in_paper.py
