@@ -46,7 +46,7 @@ The proposed method includes five main modules: <br/>
 4. fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 5. practical fixed-time decentralized formation controller (PFxTDFC)<br/>
 
-### practical fixed-time distributed state observer (PFxTDSO)<br/>
+### Practical fixed-time distributed state observer (PFxTDSO)<br/>
 
 Observation error for follower UAV node $i$<br/>
 
@@ -92,7 +92,7 @@ $$
 \end{aligned}
 \quad\quad(6)$$<br/>
 
-### fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
+### Fixed-time disturbance observer in rotational subsystem (FxTDO)<br/>
 
 Update virtual angular velocity tracking vector<br/>
 
@@ -144,7 +144,7 @@ $$
 \quad\quad(11)$$<br/>
 
 
-### nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
+### Nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC)<br/>
 
 For any $i \in {x,y,z}$, define auxiliary sliding mode surface
 
@@ -227,7 +227,7 @@ $$
 \quad\quad(19)$$<br/>
 
 
-### fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
+### Fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 
 Update virtual linear velocity tracking vector<br/>
 
@@ -279,7 +279,7 @@ $$
 \quad\quad(24)$$<br/>
 
 
-### practical fixed-time decentralized formation controller (PFxTDFC)<br/>
+### Practical fixed-time decentralized formation controller (PFxTDFC)<br/>
 
 Position and linear velocity tracking error
 
