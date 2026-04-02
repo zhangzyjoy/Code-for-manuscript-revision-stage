@@ -395,12 +395,12 @@ Run the software-in-loop simulation of the compared method<br/>
 ```
 python3 zzzz_run_sim_for_compare.py --sim
 ```
-5. Deploy the control scheme on the Crazyswarm UAVs via ROS (Robot Operating System).<br/>
-Power on the crazyflie UAVs and use the terminal to choose the corresponding UAV nodes<br/>
+5. Power on the crazyflie UAVs and use the terminal to choose the corresponding UAV nodes<br/>
 ```
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/src/crazyswarm/scripts/
 python3 chooser.py
 ```
+Close the window of chooser and then run control scripts via ROS (Robot Operating System) to deploy the control scheme on the Crazyswarm UAVs. <br/><br/>
 6. Run the experiment for validation of the proposed method <br/>
 ```
 roslaunch crazyswarm vel_log_lighthouse.launch
