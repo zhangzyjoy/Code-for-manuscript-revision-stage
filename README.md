@@ -380,7 +380,7 @@ catkin_make
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/src/crazyswarm/launch/
 touch allCrazyflies.yaml
 ```
-Fill in the desired number, channel, and initial position.<br/>
+Fill in the desired number, channel, and initial position.<br/><br/>
 4. Run the software-in-loop simulation<br/>
 ```
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/src/crazyswarm/scripts/
