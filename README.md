@@ -401,18 +401,17 @@ Power on the crazyflie UAVs and use the terminal to choose the corresponding UAV
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/src/crazyswarm/scripts/
 python3 chooser.py
 ```
-6. Run the experiment <br/>
+6. Run the experiment for validation of the proposed method <br/>
 ```
 roslaunch crazyswarm vel_log_lighthouse.launch
 rosrun crazyswarm zzzz_run_experiment_in_paper.py
 ```
-for validation of the proposed method or run<br/>
+or run the experiment for validation of the compared method <br/>
 ```
 roslaunch crazyswarm vel_log_lighthouse.launch
 rosrun crazyswarm zzzz_run_experiment_for_compare.py
 ```
-for validation of the compared method<br/><br/>
 
-**If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com**
+**If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/>
 
 
