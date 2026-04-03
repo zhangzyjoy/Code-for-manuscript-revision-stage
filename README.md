@@ -333,9 +333,7 @@ $$
 
 ## Notations for differences existing in simulation and experiment <br/> 
 
-
-
-**The simulation**<br/>
+Simulation 
 
 
 ## Simulation Scheme and Implementation Procedure<br/>
