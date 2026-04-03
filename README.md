@@ -331,11 +331,11 @@ $$
 \quad\quad(30)$$<br/>
 
 
-## Note for existence of differences in simulation and experiment <br/> 
+## Notations for differences existing in simulation and experiment <br/> 
 
 
 
-**For further **<br/>
+**The simulation**<br/>
 
 
 ## Simulation Scheme and Implementation Procedure<br/>
