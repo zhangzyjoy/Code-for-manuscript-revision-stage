@@ -7,7 +7,7 @@ The README file includes four chapters:
 4. experimental validation scheme and implementation procedure, introducing how to run the software-in-loop simulation in Python, and how to deploy the controller code on multiple crazyflie UAVs to conduct the experiment. <br/>
 
 **Note: A video is developed to illustrate the performance metrics of the proposed / compared method in the real-world experiment by deploying 'Code For Experiment' to drive the crazyflie UAVs.** <br/>
-**The video can be accessed at https://youtu.be/3SR10K3WDYw?si=wBZPJSE5iLvDWyJl or https://www.bilibili.com/video/BV1T8XrBbEVf/**
+**The video can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/**
 
 ## Symbol Definition List<br/>
 - $g$ : gravitational acceleration
