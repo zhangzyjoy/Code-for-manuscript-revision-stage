@@ -46,7 +46,7 @@ The proposed method includes five main modules: <br/>
 4. fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 5. practical fixed-time decentralized formation controller (PFxTDFC)<br/><br/>
 
-A diagram is placed here for demonstration of the whole control scheme for simulation <br/>
+A diagram is placed here for demonstration of the whole control scheme for simulation. <br/>
 
 ![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/>
 
