@@ -39,6 +39,27 @@ Please refer to the diagram presented below and the code in folder "**Code For S
 
 ## Controller Instructions <br/>
 
+### Nonlinear smooth sigmoid function <br/>
+
+A newly introduced nonlinear smooth sigmoid vector is defined as <br/>
+
+$$
+\begin{aligned}
+\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta ( \overline x _1, \alpha, \gamma ), ..., \vartheta ( \overline x _n, \alpha, \gamma ) ] ^T
+\end{aligned}
+$$<br/>
+
+with each entry denoted as <br/>
+
+$$
+\begin{aligned}
+e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i
+\end{aligned}
+$$<br/>
+
+
+
+
 ### Practical fixed-time distributed state observer (PFxTDSO)<br/>
 
 Observation error for follower UAV node $i$<br/>
