@@ -324,7 +324,7 @@ update the translational dynamics
 $$
 \begin{aligned}
 \begin{cases}
-&\dot v _i = -g \overline e _3 + T _i R( Q _i ) \overline e _3 / m _i + d _i ^v \\
+&\dot v _i = -g \overline e _3 + u _i + T _i R( Q _i ^c ) ( R( Q _i ^e ) - I _3 ) \overline e _3 / m _i + d _i ^v \\
 &\dot p _i = v _i
 \end{cases}
 \end{aligned}
@@ -346,7 +346,7 @@ $$
 \end{aligned}
 \quad\quad(30)$$<br/>
 
-employ Eq.(23) and the PFxTDFC Eq.(28) is rewritten as <br/>
+employ Eq.(23) and design $U _i$ to reformulate the PFxTDFC Eq.(28) as <br/>
 
 $$
 \begin{aligned}
