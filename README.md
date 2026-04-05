@@ -7,35 +7,7 @@ The README file includes four chapters:
 4. experimental validation scheme and implementation procedure, introducing how to run the software-in-loop simulation in Python, and how to deploy the controller code on multiple crazyflie UAVs to conduct the experiment. <br/>
 
 **Note: A video is developed to illustrate the performance metrics of the proposed / compared method in the real-world experiment by deploying 'Code For Experiment' to drive the crazyflie UAVs.** <br/>
-**The video can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/**
-
-## Symbol Definition List<br/>
-- $g$ : gravitational acceleration
-- $\overline e _3$ : unit vector $[0,0,1]^{T}$
-- $m_{i}$ : mass
-- $\Lambda_{i}$ : inertia matrix 
-- $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
-- $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
-- $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
-- $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
-- $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
-- $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
-- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
-- $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
-- $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
-- $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
-- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
-- $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
-- $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
-- $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
-- $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
-- $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
-- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : piecewise auxiliary rotational error
-- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
-- $F_i^S$ : rotation compensation term
-- $\tau_i$ : applied torque rotational control input
-- $d _i ^\varpi$, $\hat d _i ^\varpi$ : rotational disturbance, disturbance observation
-- $\sigma _i ^\varpi$, $\overline \sigma _i ^\varpi$, $\hat {\overline \sigma} _i ^\varpi$ : virtual angular velocity tracking vector, tracking error, tracking error observation
+**The video can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/>
 
 ## Controller Design <br/>
 
@@ -50,6 +22,7 @@ A diagram is placed here for demonstration of the whole control scheme for simul
 
 ![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/>
 
+**Note : A detailed symbol list of all variables in the control scheme is presented in the end of this webpage. Please refer to the list for instructions on different symbols.**  <br/>
 
 ## Notations for differences existing in simulation and experiment <br/> 
 
@@ -448,6 +421,34 @@ or run the experiment for validation of the compared method <br/>
 roslaunch crazyswarm vel_log_lighthouse.launch
 rosrun crazyswarm zzzz_run_experiment_for_compare.py
 ```
+
+## Symbol Definition List<br/>
+- $g$ : gravitational acceleration
+- $\overline e _3$ : unit vector $[0,0,1]^{T}$
+- $m_{i}$ : mass
+- $\Lambda_{i}$ : inertia matrix 
+- $p_{0}$, $p_{i}$ : position vector of leader UAV, follower UAV node $i$
+- $v_{0}$, $v_{i}$ : linear velocity vector of leader UAV, follower UAV node $i$
+- $u_{0}$, $u_{i}$ : translational control input of leader UAV, follower UAV node $i$
+- $\hat p_i ^d, \hat v_i ^d$ : desired position, linear velocity observation for follower UAV node $i$
+- $e_{i,p}^{d}$, $e_{i,v}^{d}$ : observation error of desired position, linear velocity for follower UAV node $i$
+- $\tilde e _{i,p} ^d$, $\tilde e _{i,v} ^d$ : lumped formation observation error of desired position, linear velocity for follower UAV node $i$
+- $e_{i}^{p}$, $e_{i}^{v}$ : position, linear velocity tracking error of follower UAV node $i$
+- $\chi_i$, $\phi_i$ : virtual linear velocity tracking vector, tracking error
+- $d _i ^v$, $\hat d _i ^v$ : translational disturbance, disturbance observation
+- $\sigma _i ^v$, $\overline \sigma _i ^v$, $\hat {\overline \sigma} _i ^v$ : virtual linear velocity tracking vector, tracking error, tracking error observation
+- $Q_{i} = [\rho_{i}, q_{i}^{T}]^{T} = [\rho_{i}, q_{i}^{1}, q_{i}^{2}, q_{i}^{3}]^T$ : quaternion
+- $Q_{i}^{c}$, $Q_{i}^{e}$ : quaternion command, error
+- $R(Q_{i})$, $R(Q_{i}^{c})$, $R(Q_{i}^{e})$ : rotation matrix, command, error
+- $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
+- $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
+- $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
+- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : piecewise auxiliary rotational error
+- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
+- $F_i^S$ : rotation compensation term
+- $\tau_i$ : applied torque rotational control input
+- $d _i ^\varpi$, $\hat d _i ^\varpi$ : rotational disturbance, disturbance observation
+- $\sigma _i ^\varpi$, $\overline \sigma _i ^\varpi$, $\hat {\overline \sigma} _i ^\varpi$ : virtual angular velocity tracking vector, tracking error, tracking error observation
 
 **If there exist any question about this webpage, please do not hesitate to contact us at any time by zyzhang9921@buaa.edu.cn, or zhaoyuzhang9921@gmail.com** <br/>
 
