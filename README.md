@@ -172,7 +172,7 @@ Sliding mode surface
 
 $$
 \begin{aligned}
-\overline S _{i,k} = \varpi ^e _{i,k} + c _i ^S \Phi _k ( \psi ^e _{i,k})
+S _{i,k} = \varpi ^e _{i,k} + c _i ^S \Phi _k ( \psi ^e _{i,k})
 \end{aligned}
 \quad\quad(14)$$<br/>
 
