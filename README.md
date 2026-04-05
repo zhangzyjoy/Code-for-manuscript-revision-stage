@@ -199,7 +199,7 @@ $$
 F _i ^S = &- ( \varpi _i ) _\times \Lambda _i \varpi _i + \Lambda _i ( \varpi _i ^e ) _\times ( R ( Q _i ^e ) ) ^T \varpi _i ^c \\
 &- \Lambda _i ( R ( Q _i ^e ) ) ^T \dot \varpi _i ^c + c _i ^S \Lambda _i \overline \Phi _k ( \psi ^e _{i,k})
 \end{aligned}
-\quad\quad(17)$$<br/>
+\quad\quad(16)$$<br/>
 
 The applied torque control input
 
@@ -208,7 +208,7 @@ $$
 \tau _i = &- c _i ^{\varpi,1} \vartheta ( S_i, \beta ^1 _\varpi, \mu _c ^\Theta ) - c _i ^{\varpi,2} \vartheta ( S_i, \beta ^2 _\varpi, \mu _c ^\Theta ) \\
 &- c _i ^{\varpi,3} S_i - \hat d _i ^\varpi - \frac 1 2 ( \overline \eta _i ^S ) ^2 \|\| F _i ^S \|\| ^2 S_i
 \end{aligned}
-\quad\quad(18)$$<br/>
+\quad\quad(17)$$<br/>
 
 where $\hat d _i ^\varpi$ is obtained by FxTDO in rotational system<br/>
 
@@ -224,7 +224,7 @@ $$
 &\dot \psi ^e _i = \varpi _i ^e
 \end{cases}
 \end{aligned}
-\quad\quad(19)$$<br/>
+\quad\quad(18)$$<br/>
 
 
 ### Fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
@@ -235,7 +235,7 @@ $$
 \begin{aligned}
 \dot \sigma _i ^v = -g \overline e _3 + T_i R(Q_i) \overline e _3/ m _i + c _i ^{v,3} \overline \sigma _i ^v
 \end{aligned}
-\quad\quad(20)$$<br/>
+\quad\quad(19)$$<br/>
 
 Virtual linear velocity tracking error
 
@@ -243,7 +243,7 @@ $$
 \begin{aligned}
 \overline \sigma _i ^v = v _i - \sigma _i ^v
 \end{aligned}
-\quad\quad(21)$$<br/>
+\quad\quad(20)$$<br/>
 
 In order to achieve $\hat \sigma ^i _2 \to \ddot {\overline \sigma} _i ^v$, $\hat \sigma ^i _1 \to \dot {\overline \sigma} _i ^v$, $\hat \sigma ^i _0 \to {\overline \sigma} _i ^v$, a high-order nonlinear differentiator is given as
 
@@ -256,7 +256,7 @@ $$
 &\dot {\hat \sigma} ^i _0 = \hat \sigma ^i _1 - c _3 ^i \hbar \mathrm {si} \mathrm g ^{\frac 2 3} ( \tilde \sigma ^i _0 ) - c _3 ^i ( 1 - \hbar ) \mathrm {si} \mathrm g ^{1+ {\frac 1 3} \varsigma} ( \tilde \sigma ^i _0 )
 \end{cases}
 \end{aligned}
-\quad\quad(22)$$<br/>
+\quad\quad(21)$$<br/>
 
 
 and then $\dot {\overline \sigma} _i ^v$ in Eq.(8) approximately equals to the output value $\hat \sigma ^i _1$<br/>
@@ -268,7 +268,7 @@ $$
 \begin{aligned}
 \dot {\hat {\overline \sigma}} _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,1} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _1 ^v, \mu _d ^v ) + c _i ^{v,2} \vartheta ( \tilde {\overline \sigma} _i ^v, \alpha _2 ^v, \mu _d ^v )
 \end{aligned}
-\quad\quad(23)$$<br/>
+\quad\quad(22)$$<br/>
 
 translational disturbance observer<br/>
 
@@ -276,7 +276,7 @@ $$
 \begin{aligned}
 \hat d _i ^v = \dot {\overline \sigma} _i ^v + c _i ^{v,3} \hat {\overline \sigma} _i ^v
 \end{aligned}
-\quad\quad(24)$$<br/>
+\quad\quad(23)$$<br/>
 
 
 ### Practical fixed-time decentralized formation controller (PFxTDFC)<br/>
@@ -287,13 +287,13 @@ $$
 \begin{aligned}
 e _i ^v = v _i - \hat v _i ^d
 \end{aligned}
-\quad\quad(25)$$<br/>
+\quad\quad(24)$$<br/>
 
 $$
 \begin{aligned}
 e _i ^p = p _i - \hat p _i ^d
 \end{aligned}
-\quad\quad(26)$$<br/>
+\quad\quad(25)$$<br/>
 
 virtual velocity error tracking vector
 
@@ -301,7 +301,7 @@ $$
 \begin{aligned}
 \chi _i = - \kappa _1 ^\chi \vartheta ( e _i ^p, \beta _1, \mu _c ^p ) - \kappa _2 ^\chi \vartheta ( e _i ^p, \beta _2, \mu _c ^p )
 \end{aligned}
-\quad\quad(27)$$<br/>
+\quad\quad(26)$$<br/>
 
 virtual velocity error tracking error
 
@@ -309,7 +309,7 @@ $$
 \begin{aligned}
 \phi _i = e _i ^v - \chi _i
 \end{aligned}
-\quad\quad(28)$$<br/>
+\quad\quad(27)$$<br/>
 
 design the translational control input
 
@@ -317,7 +317,7 @@ $$
 \begin{aligned}
 u _i = g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p )
 \end{aligned}
-\quad\quad(29)$$<br/>
+\quad\quad(28)$$<br/>
 
 update the translational dynamics
 
@@ -328,7 +328,7 @@ $$
 &\dot p _i = v _i
 \end{cases}
 \end{aligned}
-\quad\quad(30)$$<br/>
+\quad\quad(29)$$<br/>
 
 
 ## Notations for differences existing in simulation and experiment <br/> 
