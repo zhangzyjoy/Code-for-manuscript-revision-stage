@@ -45,7 +45,7 @@ A newly introduced nonlinear smooth sigmoid vector is defined as <br/>
 
 $$
 \begin{aligned}
-\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta ( \overline x _1, \alpha, \gamma ), ..., \vartheta ( \overline x _n, \alpha, \gamma ) ] ^T
+\vartheta ( \overline x, \alpha, \gamma ) = [ \vartheta _k ( \overline x _1, \alpha, \gamma ), ..., \vartheta _k ( \overline x _n, \alpha, \gamma ) ] ^T
 \end{aligned}
 $$<br/>
 
@@ -53,11 +53,17 @@ with each entry denoted as <br/>
 
 $$
 \begin{aligned}
-e _{i,v} ^d = \hat v _i ^d - v_0 - \dot \delta _i
+\vartheta _k ( \overline x _k, \alpha, \gamma ) = | x _k | ^ \alpha \lambda _k ( x _k, \gamma )
 \end{aligned}
 $$<br/>
 
+where the sigmoid function is <br/>
 
+$$
+\begin{aligned}
+\lambda _k ( x _k, \gamma ) = -1 + \frac 1 {1 + \exp ( - \gamma x _k )}
+\end{aligned}
+$$<br/>
 
 
 ### Practical fixed-time distributed state observer (PFxTDSO)<br/>
