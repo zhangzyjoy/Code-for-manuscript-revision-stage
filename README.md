@@ -315,7 +315,7 @@ design the translational control input
 
 $$
 \begin{aligned}
-u _i = g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p )
+u _i = g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p ) - \hat d _i ^v
 \end{aligned}
 \quad\quad(28)$$<br/>
 
@@ -333,7 +333,26 @@ $$
 
 ## Notations for differences existing in simulation and experiment <br/> 
 
-Simulation 
+Simulation  <br/> 
+
+The translational dynamics Eq.(29) is simplified as a second-order agent with external disturbacne <br/>
+
+$$
+\begin{aligned}
+\begin{cases}
+&\dot v _i = U _i + d _i ^v \\
+&\dot p _i = v _i
+\end{cases}
+\end{aligned}
+\quad\quad(30)$$<br/>
+
+The PFxTDFC Eq.(28) is rewritten as <br/>
+
+$$
+\begin{aligned}
+U _i = g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p ) - \hat d _i ^v
+\end{aligned}
+\quad\quad(31)$$<br/>
 
 
 ## Simulation Scheme and Implementation Procedure<br/>
