@@ -365,11 +365,11 @@ All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rot
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-**Hardware requirement** : <br/><br/> 
+### Hardware requirement <br/>
 
 ![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/experiment_hardware_structure.png)  <br/><br/> 
 
-**Software requirement** : <br/><br/> 
+### Software requirement <br/>
 The software-in-loop simulation has already been tested in a VMWARE virtual machine with an software environment of Ubuntu 18.04, ROS Melodic, Python 3.8. The experiment is run in a workstation control center with the same software configuration. <br/><br/>
 Refer to the following link for instructions on installing the required packages : <br/>
 https://crazyswarm.readthedocs.io/en/latest/installation.html <br/><br/>
@@ -380,7 +380,7 @@ Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tuto
 
 The proposed control method of translational subsystem, **PFxTDSO**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **software-in-loop simulation** and **real-world experiment on Crazyflie UAVs** by running the **Python scripts** in folder 'Code For Experiment'. <br/> <br/>
 
-**Testing the code** : <br/>
+### Code testing procedure <br/>
 1. Download the code package and unzip 'Code For Experiment' to arbitrary path. Recursively Move all files in child directory '/chimu_ws' to the main directory '/home/username/'<br/>
 2. Guide to the workspace and compile the package crazyswarm<br/>
 ```
