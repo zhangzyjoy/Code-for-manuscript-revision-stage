@@ -18,11 +18,11 @@ The proposed method includes five main modules: <br/>
 4. fixed-time disturbance observer in translational subsystem (FxTDO)<br/>
 5. practical fixed-time decentralized formation controller (PFxTDFC)<br/><br/>
 
-A diagram is placed here for demonstration of the whole control scheme for simulation. <br/>
+A diagram is placed here for demonstration of the whole control scheme for simulation. <br/> <br/>
 
-![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/>
+![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/control_scheme_diagram.png)  <br/> <br/>
 
-**Note : A detailed symbol list of all variables in the control scheme is presented in the end of this webpage. Please refer to the list for instructions on different symbols.**  <br/>
+**Note : A detailed symbol list of all variables in the control scheme is presented in the end of this webpage. Please refer to the list for instructions on different symbols.**  <br/><br/>
 
 ## Notations for differences existing in simulation and experiment <br/> 
 
@@ -36,6 +36,8 @@ By leveraging Python API in CrazySwarm source code, it is relatively easier for 
 **Therefore, as the reviewers pointed out, it is a research gap that the attitude controller proposed in the manuscript is not validated in the hardware platform. We are sorry about the face that currently the proposed nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) still remains in theoritical simulation stage. We are working hard to find out a feasible approach to test the whole closed-loop control scheme in future studies.** <br/><br/> 
 Please refer to the diagram presented below and the code in folder "**Code For Simulation**" for further detailed instructions. <br/> 
 ![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/experimental_validation_diagram.png)  <br/>
+
+## Controller Instructions <br/>
 
 ### Practical fixed-time distributed state observer (PFxTDSO)<br/>
 
