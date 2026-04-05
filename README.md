@@ -30,8 +30,8 @@ The README file includes four chapters:
 - $\varpi_{i}$, $\varpi_{i}^{c}$, $\varpi_{i}^{e}$ : angular velocity, command, error
 - $\psi_i^e = [\Psi(R(Q_i^e))]_\vee$ : rotational error in Lie Algebra
 - $\overline S_i$ = $[ \overline S_{i,x}, \overline S_{i,y}, \overline S_{i,z} ]^T$ : auxiliary sliding mode surface
-- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : intermediate auxiliary rotational error
-- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of intermediate auxiliary rotational error
+- $\Phi(\psi_i^e) = [ \Phi_x(\psi_{i,x} ^e), \Phi_y(\psi_{i,y} ^e), \Phi_z(\psi_{i,z} ^e)]^T$ : piecewise auxiliary rotational error
+- $\overline \Phi (\psi_i^e) = [ \overline \Phi _x(\psi ^e _{i,x}), \overline \Phi _y(\psi ^e _{i,y}), \overline \Phi _z(\psi ^e _{i,z})]^T$ : first derivative of piecewise auxiliary rotational error
 - $F_i^S$ : rotation compensation term
 - $\tau_i$ : applied torque rotational control input
 - $d _i ^\varpi$, $\hat d _i ^\varpi$ : rotational disturbance, disturbance observation
@@ -154,7 +154,7 @@ $$
 \end{aligned}
 \quad\quad(12)$$<br/>
 
-For any $i \in {x,y,z}$, define intermediate auxiliary rotational error
+For any $i \in {x,y,z}$, define piecewise auxiliary rotational error
 
 $$
 \begin{aligned}
@@ -176,7 +176,7 @@ $$
 \end{aligned}
 \quad\quad(14)$$<br/>
 
-The derivative of intermediate auxiliary rotational error
+The derivative of piecewise auxiliary rotational error
 
 $$
 \begin{aligned}
