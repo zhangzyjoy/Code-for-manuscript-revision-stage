@@ -311,7 +311,7 @@ $$
 \end{aligned}
 \quad\quad(27)$$<br/>
 
-design the translational control input
+employ Eq.(23) to design the translational control input
 
 $$
 \begin{aligned}
@@ -346,7 +346,7 @@ $$
 \end{aligned}
 \quad\quad(30)$$<br/>
 
-The PFxTDFC Eq.(28) is rewritten as <br/>
+employ Eq.(23) and the PFxTDFC Eq.(28) is rewritten as <br/>
 
 $$
 \begin{aligned}
