@@ -1,5 +1,5 @@
 # Code Specifications<br/>
-We already upload two folders 'Code For Simulation' and 'Code For Experiment' in the main branch in this repository.
+<p>We already upload two folders 'Code For Simulation' and 'Code For Experiment' in the main branch in this repository.
 The README file includes four chapters: 
 1. symbol definition list, indicating all symbols utilized in the control design;
 2. detailed controller scheme with equations;
@@ -8,6 +8,8 @@ The README file includes four chapters:
 
 **Note: A video is developed to illustrate the performance metrics of the proposed / compared method in the real-world experiment by deploying 'Code For Experiment' to drive the crazyflie UAVs.** <br/>
 **The video can be accessed at https://youtu.be/3SR10K3WDYw or https://www.bilibili.com/video/BV1T8XrBbEVf/** <br/>
+
+</p>
 
 ## Controller Design <br/>
 
