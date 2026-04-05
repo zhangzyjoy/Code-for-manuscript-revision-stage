@@ -34,8 +34,8 @@ However, as indicated in the '**Indoor Experimental Validation**' subsection, On
 The experiment is executed by running a python script. The control command **cf.cmdVelocity()** is invoked to send **a command velocity integrated by the control input derived from PFxTDFC Eq.(31)** to the CrazySwarmServer through **Python API** already developed by **USC-ACTLab** in https://github.com/USC-ACTLab/crazyswarm.  <br/> 
 By leveraging Python API in CrazySwarm source code, it is relatively easier for us to validate the formation control protocols directly through command in Python API since the **low-level attitude and setpoint controller** have been already developed in a robust manner. <br/><br/> 
 **Therefore, as the reviewers pointed out, it is a research gap that the attitude controller proposed in the manuscript is not validated in the hardware platform. We are sorry about the face that currently the proposed nonsingular Lie-algebra-based sliding mode attitude controller (NLSMAC) still remains in theoritical simulation stage. We are working hard to find out a feasible approach to test the whole closed-loop control scheme in future studies.** <br/><br/> 
-Please refer to the diagram presented below and the code in folder "**Code For Simulation**" for further detailed instructions. <br/> 
-![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/experimental_validation_diagram.png)  <br/>
+Please refer to the diagram presented below and the code in folder "**Code For Simulation**" for further detailed instructions. <br/><br/>  
+![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/experimental_validation_diagram.png)  <br/><br/> 
 
 ## Controller Instructions <br/>
 
@@ -365,11 +365,11 @@ All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rot
 
 ## Experimental Validation Scheme and Implementation Procedure<br/>
 
-**Hardware requirement** : <br/>
+**Hardware requirement** : <br/><br/> 
 
-![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/experiment_hardware_structure.png)  <br/>
+![image](https://github.com/zhangzyjoy/Code-for-manuscript-revision-stage/blob/main/Pics/experiment_hardware_structure.png)  <br/><br/> 
 
-**Software requirement** : <br/>
+**Software requirement** : <br/><br/> 
 The software-in-loop simulation has already been tested in a VMWARE virtual machine with an software environment of Ubuntu 18.04, ROS Melodic, Python 3.8. The experiment is run in a workstation control center with the same software configuration. <br/><br/>
 Refer to the following link for instructions on installing the required packages : <br/>
 https://crazyswarm.readthedocs.io/en/latest/installation.html <br/><br/>
