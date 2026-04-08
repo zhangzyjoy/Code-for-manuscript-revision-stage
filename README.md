@@ -385,7 +385,7 @@ Git clone and download the code from this repository. <br/>
 All of the five main modules of the proposed method, **PFxTDSO**, **FxTDO in rotational** subsystem, **NLSMAC**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **numerical simulation** by running the **MATLAB scripts / Simulink models** in folder 'Code For Simulation'. <br/><br/>
 
 **Testing the code** : <br/>
-1. Download the code package and unzip 'Code For Simulation' to arbitrary path. THen guide to the directory "/Code For Simulation".<br/>
+1. Download the code package and unzip 'Code For Simulation' to arbitrary path. Then guide to the directory "/Code For Simulation".<br/>
 2. Run "/Code For Simulation/init_sim_paper_scenario.m" to initialize the parameters and states.<br/>
 3. Run "/Code For Simulation/run_sim_paper_scenario.slx" to run the simulation model. Check if the simulation time is set as 30s (default). Check the solver in configuration parameters setting and choose fixed-step ode4 solver (default).<br/>
 5. Run "/Code For Simulation/plot_sim_paper_scenario.m" to plot the simulation results.<br/>
@@ -408,7 +408,7 @@ Instructions for Lighthouse Station : https://www.bitcraze.io/documentation/tuto
 The proposed control method of translational subsystem, **PFxTDSO**, **FxTDO in translational** subsystem, and **PFxTDFC**, can be verified via **software-in-loop simulation** and **real-world experiment on Crazyflie UAVs** by running the **Python scripts** in folder 'Code For Experiment'. <br/> <br/>
 
 ### Code testing procedure <br/>
-1. Download the code package and unzip 'Code For Experiment' to arbitrary path. Recursively Move all files in child directory '/chimu_ws' to the main directory '/home/username/'<br/>
+1. Download the code package and unzip 'Code For Experiment' to arbitrary path. Recursively move all files in child directory '/chimu_ws' to the main directory '/home/username/'<br/>
 2. Guide to the workspace and compile the package crazyswarm<br/>
 ```
 cd /home/username/chimu_ws/src/crazyswarm/ros_ws/
