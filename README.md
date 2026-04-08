@@ -368,7 +368,7 @@ employ Eq.(23) and design $U _i$ to reformulate the PFxTDFC Eq.(28) as <br/>
 
 $$
 \begin{aligned}
-U _i = g \overline e _3 + \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p ) - \hat d _i ^v
+U _i = \dot \chi _i - \kappa _1 ^u \vartheta ( \phi _i, \beta _1, \mu _c ^p ) - \kappa _2 ^u \vartheta ( \phi _i, \beta _2, \mu _c ^p ) - \hat d _i ^v
 \end{aligned}
 \quad\quad(31)$$<br/>
 
