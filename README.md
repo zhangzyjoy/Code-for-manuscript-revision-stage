@@ -315,7 +315,7 @@ e _i ^p = p _i - \hat p _i ^d
 \end{aligned}
 \quad\quad(25)$$<br/>
 
-virtual velocity error tracking vector
+The auxiliary velocity control variable
 
 $$
 \begin{aligned}
@@ -323,7 +323,7 @@ $$
 \end{aligned}
 \quad\quad(26)$$<br/>
 
-virtual velocity error tracking error
+The virtual velocity tracking error
 
 $$
 \begin{aligned}
